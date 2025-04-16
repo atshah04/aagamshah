@@ -41,7 +41,7 @@ const HeroSection = () => {
             applications. I have experience in various technologies and love to
             learn new things!
           </p>
-          <div>
+          {/* <div>
             <Link
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
@@ -56,7 +56,7 @@ const HeroSection = () => {
                 Download CV
               </span>
             </Link>
-          </div>
+          </div> */}
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
