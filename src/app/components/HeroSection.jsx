@@ -38,11 +38,6 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I am a software engineer with a passion for building scalable
-            applications. I have experience in various technologies and love to
-            learn new things!
-          </p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

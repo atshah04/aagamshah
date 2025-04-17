@@ -12,7 +12,7 @@ const workExperiences = [
     companyLogo: GeotabLogo,
     companyName: "Geotab",
     position: "Software Developer Intern",
-    technologiesUsed: ["JavaScript", "TypeScript", "React", "C#", "Git", "PostGres"],
+    technologiesUsed: ["TypeScript", "React", "C#", "Git", "PostGres"],
     date: "January - April 2025",
     description: "This is a random description to check how the card will look. I will add additional information later.",
   },
@@ -40,7 +40,7 @@ const WorkExperience = () => {
   return (
     <section id="workexperience" className="w-full px-4 py-12 bg-[#121212]">
       <motion.h2
-        className="text-3xl font-bold mb-10 text-white text-center"
+        className="text-4xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-700 text-center"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}

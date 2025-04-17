@@ -17,7 +17,7 @@ const WorkExperienceCard = ({
           src={companyLogo}
           alt={`${companyName} logo`}
           fill
-          className="object-contain"
+          className="object-contain brightness-150"
         />
       </div>
 
@@ -55,7 +55,7 @@ const WorkExperienceCard = ({
           {technologiesUsed.map((tech, index) => (
             <span
               key={index}
-              className="text-xs bg-zinc-800 text-zinc-200 px-2 py-1 rounded-full"
+              className="text-sm bg-gradient-to-r from-blue-400 to-blue-900 text-white px-3 py-1.5 rounded-full"
             >
               {tech}
             </span>

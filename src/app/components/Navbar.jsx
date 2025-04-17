@@ -12,7 +12,7 @@ const navLinks = [
     path: "#about",
   },
   {
-    title: "Work Experience",
+    title: "Experience",
     path: "#workexperience",
   },
   {
