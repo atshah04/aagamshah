@@ -4,6 +4,7 @@ import GithubIcon from "../../../public/images/github-icon.svg";
 import LinkedinIcon from "../../../public/images/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -42,10 +43,17 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 w-full relative"
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-10">
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4  transform -translate-x-1/2 -translate-1/2"></div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: false }}
+        className="z-10"
+      >
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
         </h5>
@@ -62,8 +70,14 @@ const EmailSection = () => {
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: false }}
+      >
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
@@ -124,7 +138,7 @@ const EmailSection = () => {
             </button>
           </form>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 };
