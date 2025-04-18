@@ -14,7 +14,13 @@ const workExperiences = [
     position: "Software Developer Intern",
     technologiesUsed: ["TypeScript", "React", "C#", "Git", "PostGres"],
     date: "January - April 2025",
-    description: "This is a random description to check how the card will look. I will add additional information later.",
+    description: ""
+      // "As part of the Pixel Pipeline team, I worked on the Trips History page" +
+      // " implementing new features and fixing bugs related to their APIs. I was" + 
+      // " also responsible for having a minimum of a 90% code coverage through unit" +
+      // " tests on their BETA page which was rolled out to production within my term." +
+      // " To improve the user experience, I also implemented an API which would allow users to sort their" +
+      // " trips by date, driver name or device name in ascending or descending order to allow for better insights.",
   },
   {
     id: 2,
@@ -23,16 +29,27 @@ const workExperiences = [
     position: "Software Developer Intern",
     technologiesUsed: ["C++", "Microsoft Azure", "TFS"],
     date: "May - August 2024",
-    description: "This is a random description to check how the card will look. I will add additional information later.",
+    description: ""
+      // "As part of Moody’s AXIS team, I improved the efficiency of reserve component" +
+      // "calculations by integrating SQL-driven automation, cutting runtime by 7%. I " + 
+      // "refactored legacy storage logic into a modular class, reducing the codebase by" +
+      // " over 1,200 lines and decreasing compile time by 12%. I also developed real-time"+
+      // " error walk-throughs within AXIS feature codes to enhance user guidance and troubleshooting."
   },
   {
     id: 3,
     companyLogo: SafelineLogo,
-    companyName: "Safeline Group of Companies",
+    companyName: "Safeline",
     position: "Business Development Intern",
-    technologiesUsed: ["Python", "Microsoft Sharepoint", "Power Automate"],
+    technologiesUsed: ["Python", "Sharepoint", "Power Automate"],
     date: "May - August 2023",
-    description: "This is a random description to check how the card will look. I will add additional information later.",
+    description: ""
+      // "During my internship at Safeline, I built a Python automation tool that analyzed and compared" +
+      // " over 1 million words across various legislations, helping identify key discrepancies for policy" +
+      // " updates. I also engineered an automated VBA-driven database to catalog and update company files" +
+      // " through an intuitive interface. To improve internal operations, I designed and launched a " +
+      // "centralized company hub on Microsoft SharePoint, streamlining access to essential resources" + 
+      // " and boosting team productivity.",
   },
 ];
 
@@ -50,7 +67,7 @@ const WorkExperience = () => {
         Work Experience
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {workExperiences.map((experience, index) => (
           <motion.div
             key={index}
